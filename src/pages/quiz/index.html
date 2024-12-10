@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>测评进行中 - AI情侣契合度测试</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../components/message/style.css">
+    <link rel="stylesheet" href="../../components/loading/style.css">
+    <link rel="stylesheet" href="../../components/dialog/style.css">
+</head>
+<body>
+    <!-- Header区域 -->
+    <header class="header">
+        <div class="container">
+            <div class="progress-bar">
+                <div class="progress-text">
+                    <span class="current">1</span>/<span class="total">10</span>
+                </div>
+                <div class="progress-track">
+                    <div class="progress-fill" style="width: 10%"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主体区域 -->
+    <main class="main">
+        <div class="container">
+            <div class="quiz-container">
+                <!-- 题目区域 -->
+                <div class="question-area">
+                    <h2 class="question-text" data-question-id="1">
+                        在做决定时,你更倾向于:
+                    </h2>
+                    <div class="options-list">
+                        <div class="option" data-value="A">
+                            <input type="radio" name="q1" id="q1_A" value="A">
+                            <label for="q1_A">理性分析后决定</label>
+                        </div>
+                        <div class="option" data-value="B">
+                            <input type="radio" name="q1" id="q1_B" value="B">
+                            <label for="q1_B">根据感觉来决定</label>
+                        </div>
+                        <div class="option" data-value="C">
+                            <input type="radio" name="q1" id="q1_C" value="C">
+                            <label for="q1_C">两者都有</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 操作区域 -->
+                <div class="actions">
+                    <button class="btn prev-btn" disabled>上一题</button>
+                    <button class="btn next-btn">下一题</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer区域 -->
+    <footer class="footer">
+        <div class="container">
+            <p class="copyright">© 2024 AI情侣契合度测试</p>
+        </div>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html> 

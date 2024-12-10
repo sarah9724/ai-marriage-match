@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI情侣契合度测试</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header区域 -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">AI情侣契合度测试</h1>
+            <p class="slogan">用科学的方式,测试你们的契合度</p>
+        </div>
+    </header>
+
+    <!-- 主体区域 -->
+    <main class="main">
+        <div class="container">
+            <section class="intro">
+                <h2>了解你们的契合度</h2>
+                <p>通过AI分析,从性格特征、价值观、生活习惯等维度,</p>
+                <p>科学评估你们的匹配程度。</p>
+            </section>
+            <section class="cta">
+                <button class="start-btn">开始测试</button>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer区域 -->
+    <footer class="footer">
+        <div class="container">
+            <p class="copyright">© 2024 AI情侣契合度测试</p>
+        </div>
+    </footer>
+
+    <script type="module">
+        // 获取开始测试按钮
+        const startBtn = document.querySelector('.start-btn');
+        
+        // 添加点击事件
+        startBtn.addEventListener('click', () => {
+            window.location.href = '../quiz/index.html';
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>测评分析 - AI情侣契合度测试</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../components/radar-chart/style.css">
+    <link rel="stylesheet" href="../../components/analysis-card/style.css">
+    <link rel="stylesheet" href="../../components/message/style.css">
+    <link rel="stylesheet" href="../../components/loading/style.css">
+    <link rel="stylesheet" href="../../components/dialog/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- 导航区域 -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <button class="back-btn">返回结果</button>
+                <h1 class="title">详细分析</h1>
+                <div class="action-btns">
+                    <button class="export-btn">导出报告</button>
+                    <button class="share-btn">分享结果</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主体区域 -->
+    <main class="main">
+        <div class="container">
+            <!-- 总览图表区域 -->
+            <section class="overview-section">
+                <h2 class="section-title">维度分析</h2>
+                <div class="chart-container">
+                    <canvas id="radarChart"></canvas>
+                </div>
+            </section>
+
+            <!-- 维度详情区域 -->
+            <section class="dimension-section">
+                <h2 class="section-title">详细解读</h2>
+                <div class="dimension-tabs">
+                    <div class="tab active" data-dimension="personality">性格特征</div>
+                    <div class="tab" data-dimension="values">价值观</div>
+                    <div class="tab" data-dimension="lifestyle">生活习惯</div>
+                </div>
+                <div class="dimension-content"></div>
+            </section>
+
+            <!-- 建议方案区域 -->
+            <section class="advice-section">
+                <h2 class="section-title">改善建议</h2>
+                <div class="advice-timeline">
+                    <div class="timeline-item" data-period="short">
+                        <h3>近期行动建议</h3>
+                        <div class="advice-content"></div>
+                    </div>
+                    <div class="timeline-item" data-period="medium">
+                        <h3>中期改善计划</h3>
+                        <div class="advice-content"></div>
+                    </div>
+                    <div class="timeline-item" data-period="long">
+                        <h3>长期发展方向</h3>
+                        <div class="advice-content"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html> 

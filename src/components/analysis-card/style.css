@@ -1,0 +1,79 @@
+/* 分析卡片样式 */
+.analysis-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.card-header {
+    padding: 15px 20px;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-title {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #2c3e50;
+}
+
+.card-score {
+    display: flex;
+    align-items: baseline;
+}
+
+.score-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #3498db;
+}
+
+.score-label {
+    margin-left: 4px;
+    color: #666;
+}
+
+.card-content {
+    padding: 20px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.content-section,
+.suggestions-section {
+    margin-bottom: 20px;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.content-section h4,
+.suggestions-section h4 {
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.suggestions-list {
+    list-style: none;
+    padding: 0;
+}
+
+.suggestion-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.suggestion-icon {
+    color: #3498db;
+    margin-right: 10px;
+}
+
+.suggestion-text {
+    color: #666;
+    flex: 1;
+} 
